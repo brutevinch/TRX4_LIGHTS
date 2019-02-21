@@ -85,7 +85,7 @@ int GetThrottleCommand()
 //    ThrottlePulse = fir_basic(pulseIn(ThrottleChannel_Pin, HIGH, ServoTimeout));
 //    ThrottlePulse = pulseIn(ThrottleChannel_Pin, HIGH, ServoTimeout);
   
-    ThrottlePulse = getEqualized(pulseIn(ThrottleChannel_Pin, HIGH, ServoTimeout));
+    ThrottlePulse = getThEqualized(pulseIn(ThrottleChannel_Pin, HIGH, ServoTimeout));
     if ((ThrottlePulse == 0) || (ThrottlePulse > PulseMax_Bad) || (ThrottlePulse < PulseMin_Bad))
     {   // Timed out waiting for a signal, or measured a bad signal
         // Set Failsafe flag, set Throttle to 0
@@ -134,7 +134,7 @@ int GetThrottleCommand()
 int GetTurnCommand()
 {
 int TurnCommand;    
-    TurnPulse = pulseIn(SteeringChannel_Pin, HIGH, ServoTimeout);
+    TurnPulse = getStEqualized(pulseIn(SteeringChannel_Pin, HIGH, ServoTimeout));
     if ((TurnPulse == 0) || (TurnPulse > PulseMax_Bad) || (TurnPulse < PulseMin_Bad))
     {   // In this case, there was no signal found on the turn channel
         TurnCommand = 0;    // If no TurnPulse, we set Turn to 0 (no turn)

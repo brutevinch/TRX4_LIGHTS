@@ -86,9 +86,9 @@
     // This reduces the sensitivity around center stick. The numbers can be 0-100 but should be rather small, like 10. This prevents minor movements of your sticks when
     // stopped from  setting off your lights. 
     // Note: if you find you need to set these numbers to high values, what you probably need is to run through Radio Setup instead. 
-    #define ThrottleDeadband            9          // Throttle channel hysteriesis. Values below this will be ignored. Default is 10, number should be small. 
-    #define ThrottleRevDeadband         13       
-    #define TurnDeadband                60         // Same thing, but for steering channel. 
+    #define ThrottleDeadband            8          // Throttle channel hysteriesis. Values below this will be ignored. Default is 10, number should be small. 
+    #define ThrottleRevDeadband         2       
+    #define TurnDeadband                40         // Same thing, but for steering channel. 
 
 
 // DEBUGGING

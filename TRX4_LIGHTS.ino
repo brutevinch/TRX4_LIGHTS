@@ -68,7 +68,8 @@
         const int FADEOFF              =    -6;
         const int XENON                =    -7;
         const int BACKFIRE             =    -8;
-        
+        const int CDIM                 =    -9;
+
         const byte ON = 1;
         const byte OFF = 0;
         const byte YES = 1;
