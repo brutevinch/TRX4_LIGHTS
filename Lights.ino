@@ -245,7 +245,7 @@ void SetLight(int WhatLight, int WhatSetting)
 // ------------------------------------------------------------------------------------------------------------------------------------------------>  
 void CustomDimLight(int WhatLight)
 {
-    analogWrite(LightPin[WhatLight], 45);
+    analogWrite(LightPin[WhatLight], 50);
 }
 
 
