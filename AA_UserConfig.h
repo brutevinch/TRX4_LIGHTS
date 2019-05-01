@@ -2,11 +2,11 @@
 
 // NUMBER OF SCHEMES
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
-    #define NumSchemes  2                           // The number of lighting schemes implemented. Theoretically it can be anything up the memory limit. Defaults to 2. 
+    #define NumSchemes 3                            // The number of lighting schemes implemented. Theoretically it can be anything up the memory limit. Defaults to 2. 
                                                     // MAKE SURE THIS NUMBER MATCHES THE NUMBER OF SCHEMES DEFINED IN AA_LIGHT_SETUP !!
 // STATE SETTINGS
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
-    #define LongStopTime_mS          2500           // The Stop Delay state only occurs when the vehicle has been stopped for some length of time, which is set here. 
+    #define LongStopTime_mS          3000           // The Stop Delay state only occurs when the vehicle has been stopped for some length of time, which is set here. 
                                                     // Recall that 1000 mS = 1 second (default value is 30 seconds)
 // LIGHT SETTINGS - DIM LEVEL
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -33,7 +33,7 @@
                                                     // Instead there will be a delay of TurnSignalDelay_mS milliseconds after which you can hold the wheels over and the turn signals will come on. 
                                                     // Once again we are trying to prevent the unrealistic engagement of turn signals, but rather have them only engaged when you specifically
                                                     // want to for display purposes. 
-    #define TurnFromStartContinue_mS  1300           // If BlinkTurnOnlyAtStop = true, this setting determines the length of time the turn signal will continue to blink when you begin moving from 
+    #define TurnFromStartContinue_mS  1500           // If BlinkTurnOnlyAtStop = true, this setting determines the length of time the turn signal will continue to blink when you begin moving from 
                                                     // a stop with the wheels turned. In a real car, the blinker remains on through the turn but then is cancelled after the steering wheel returns
                                                     // to center. That is the effect we are trying to mimic, but we don't do it by checking the steering wheel, we simply set a length of time for the 
                                                     // turn signal to continue blinking. If you don't want this effect to happen, set this to 0 (zero). 

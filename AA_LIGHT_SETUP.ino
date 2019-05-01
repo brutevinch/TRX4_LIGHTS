@@ -71,7 +71,7 @@
     const PROGMEM uint16_t Schemes[NumSchemes][NumLights][NumStates] =
     {
         {
-        // Схема 1 - Габариты + Основной свет
+        // Схема 1 - Габариты + Ближний свет
         //     Pos 1      Pos 2      Pos 3      Pos 4       Pos 5     Forward     Reverse     Stop      StopDelay   Brake     Right Turn     Left Turn      Accelerating   Decelerating
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             {  ON,        OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 1 - Ближний 
@@ -84,7 +84,7 @@
             {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       }   // Канал 8
         },
         {
-        // Схема 2 - Габариты + Основной свет (Аварийка на стопе)
+        // Схема 2 - Габариты + Ближний свет + ПТФ
         //     Pos 1      Pos 2      Pos 3      Pos 4       Pos 5     Forward     Reverse     Stop      StopDelay   Brake     Right Turn     Left Turn      Accelerating   Decelerating
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             {  ON,        OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 1 - Ближний 
@@ -93,6 +93,19 @@
             {  DIM,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       BLINK,         NA,           NA,            NA       },  // Канал 4 - Габариты/пов ПР
             {  DIM,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,         BLINK,           NA,            NA       },  // Канал 5 - Габариты/пов ЛВ
             {  XENON,     OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 6 - ПТФ
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 7 
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       }   // Канал 8
+        },
+        {
+        // Схема 3 - Ближний свет
+        //     Pos 1      Pos 2      Pos 3      Pos 4       Pos 5     Forward     Reverse     Stop      StopDelay   Brake     Right Turn     Left Turn      Accelerating   Decelerating
+        // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            {  ON,        OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 1 - Ближний 
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 2 - Стопы
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 3 - Задний
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 4 - Габариты/пов ПР
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 5 - Габариты/пов ЛВ
+            {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 6 - ПТФ
             {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       },  // Канал 7 
             {  OFF,       OFF,       OFF,       OFF,        OFF,       NA,         NA,         NA,       NA,        NA,       NA,            NA,           NA,            NA       }   // Канал 8
         },
