@@ -1,8 +1,8 @@
 #include <CircularBuffer.h>
 
-#define TH_WINDOW_SIZE 7
-#define TH_HISTORY_SIZE 10
-#define TH_ZERO_THRESHOLD 5
+#define TH_WINDOW_SIZE 15
+#define TH_HISTORY_SIZE 15
+#define TH_ZERO_THRESHOLD 13
 #define TH_BUFFER_RESET_THRESHOLD 85
 
 CircularBuffer<int, TH_HISTORY_SIZE> th_historyBuffer;

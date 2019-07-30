@@ -2,11 +2,11 @@
 
 // NUMBER OF SCHEMES
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
-    #define NumSchemes 3                            // The number of lighting schemes implemented. Theoretically it can be anything up the memory limit. Defaults to 2. 
+    #define NumSchemes 4                            // The number of lighting schemes implemented. Theoretically it can be anything up the memory limit. Defaults to 2. 
                                                     // MAKE SURE THIS NUMBER MATCHES THE NUMBER OF SCHEMES DEFINED IN AA_LIGHT_SETUP !!
 // STATE SETTINGS
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
-    #define LongStopTime_mS          3000           // The Stop Delay state only occurs when the vehicle has been stopped for some length of time, which is set here. 
+    #define LongStopTime_mS          5000           // The Stop Delay state only occurs when the vehicle has been stopped for some length of time, which is set here. 
                                                     // Recall that 1000 mS = 1 second (default value is 30 seconds)
 // LIGHT SETTINGS - DIM LEVEL
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -86,8 +86,8 @@
     // This reduces the sensitivity around center stick. The numbers can be 0-100 but should be rather small, like 10. This prevents minor movements of your sticks when
     // stopped from  setting off your lights. 
     // Note: if you find you need to set these numbers to high values, what you probably need is to run through Radio Setup instead. 
-    #define ThrottleDeadband            8          // Throttle channel hysteriesis. Values below this will be ignored. Default is 10, number should be small. 
-    #define ThrottleRevDeadband         8      
+    #define ThrottleDeadband            7          // Throttle channel hysteriesis. Values below this will be ignored. Default is 10, number should be small. 
+    #define ThrottleRevDeadband         9      
     #define TurnDeadband                50         // Same thing, but for steering channel. 
 
 
